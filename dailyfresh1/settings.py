@@ -147,20 +147,15 @@ AUTH_USER_MODEL = 'user.User'  # 必须在第一次迁移前配置好！！！
 
 # 发送邮件配置
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
-# smpt服务地址
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587  # 587 25
-# # 发送邮件的邮箱
-EMAIL_HOST_USER = 'liuqing8958@gmail.com'
-# # 在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'dnlbliythaugjfnp'
-# # 收件人看到的发件人
-EMAIL_FROM = '天天生鲜<liuqing8958@gmail.com>'  # '天天生鲜<liuqing8958@126.com>'
-
-# 下面两项只能有一个为True
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_FROM = config('EMAIL_FROM')
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
+EMAIL_USE_SSL = config('EMAIL_USE_SSL', cast=bool)
 
 
 # Django的缓存配置 需要安装pip install django-redis-sessions==0.5.6
