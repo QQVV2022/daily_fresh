@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传文件</title>
+</head>
+<body>
+    <h3>all picturns</h3>
+    <ul>
+        {% for pic in pictures%}
+            <li>{{ forloop.counter }}----{{ pic }}</li>
+        {% endfor %}
+
+    </ul>
+    <h3>成功</h3>
+    <br >
+    <ul>
+        {% for pic in success_file_name%}
+            <li>{{ forloop.counter }}----{{ pic }}----成功</li>
+        {% endfor %}
+
+    </ul>
+
+    <form>
+        {% csrf_token %}
+
+    </form>
+all picturns
+1----logo02.png
+2----interval_line.png
+3----shop_cart.png
+4----login_banner.png
+5----slide02.jpg
+6----pay_icons.png
+7----slide03.jpg
+8----icons02.png
+9----goods.jpg
+10----down.png
+11----slide04.jpg
+12----goods_detail.jpg
+13----icons.png
+14----logo.png
+15----left_bg.jpg
+16----goods02.jpg
+17----adv02.jpg
+18----banner05.jpg
+19----fruit.jpg
+20----register_banner.png
+21----goods
+22----banner04.jpg
+23----banner06.jpg
+24----adv01.jpg
+25----banner03.jpg
+26----slide.jpg
+27----banner02.jpg
+28----banner01.jpg
+成功
+
+1----group1/M00/00/00/wKhWpF3nClGACt6kAABJgpEP3Cw245.png----成功
+2----group1/M00/00/00/wKhWpF3nClGAdR1_AAAEYxlLvDU853.png----成功
+3----group1/M00/00/00/wKhWpF3nClGAHS8NAAAFJXTEmcc536.png----成功
+4----group1/M00/00/00/wKhWpF3nClGAbbMcAAJjUubpUbg710.png----成功
+5----group1/M00/00/00/wKhWpF3nClGAVeqKAAC3By0Omcw752.jpg----成功
+6----group1/M00/00/00/wKhWpF3nClGALr9rAAAujfHqwog600.png----成功
+7----group1/M00/00/00/wKhWpF3nClGAa5gwAAETwYrDbHc941.jpg----成功
+8----group1/M00/00/00/wKhWpF3nClGAD4i6AAAIF-L75xY684.png----成功
+9----group1/M00/00/00/wKhWpF3nClGAItvXAAAX1J67fuk714.jpg----成功
+10----group1/M00/00/00/wKhWpF3nClGAJNMhAAAEKO9at7M234.png----成功
+11----group1/M00/00/00/wKhWpF3nClGAKjJQAAD0asvXLes809.jpg----成功
+12----group1/M00/00/00/wKhWpF3nClGAHStXAADhpefAOjE278.jpg----成功
+13----group1/M00/00/00/wKhWpF3nClGAROcOAAAXKw5J6Mw512.png----成功
+14----group1/M00/00/00/wKhWpF3nClGAeYUrAAAnAzgCmiE378.png----成功
+15----group1/M00/00/00/wKhWpF3nClGAc8mpAAAFV3XVc0I514.jpg----成功
+16----group1/M00/00/00/wKhWpF3nClGABm23AADN85_Jt5s472.jpg----成功
+17----group1/M00/00/00/wKhWpF3nClGAXTlLAAA9865qtF4968.jpg----成功
+18----group1/M00/00/00/wKhWpF3nClGARje4AAA-0XdggAQ554.jpg----成功
+19----group1/M00/00/00/wKhWpF3nClGAU2BLAAilcetebqg992.jpg----成功
+20----group1/M00/00/00/wKhWpF3nClGAPOviAADWbgM9OPQ464.png----成功
+21----group1/M00/00/00/wKhWpF3nClGAPOviAADWbgM9OPQ464.png----成功
+22----group1/M00/00/00/wKhWpF3nClGARMx_AAAqR3YTjIE819.jpg----成功
+23----group1/M00/00/00/wKhWpF3nClGAHgkoAAA3sQJanO4542.jpg----成功
+24----group1/M00/00/00/wKhWpF3nClGAAx7uAAA2pPk7JKw259.jpg----成功
+25----group1/M00/00/00/wKhWpF3nClGAPJcOAAAy1TlGVKQ659.jpg----成功
+26----group1/M00/00/00/wKhWpF3nClGAdhVtAACpB6F19o8623.jpg----成功
+27----group1/M00/00/00/wKhWpF3nClGAfuwfAABHr3xtKMg022.jpg----成功
+28----group1/M00/00/00/wKhWpF3nClGASZG5AAAmv11TetM211.jpg----成功
+
+
+<br ><br ><br ><br ><br >
+
+goods picturns
+1----goods014.jpg
+2----goods001.jpg
+3----goods015.jpg
+4----goods003.jpg
+5----goods017.jpg
+6----goods016.jpg
+7----goods002.jpg
+8----goods006.jpg
+9----goods012.jpg
+10----goods013.jpg
+11----goods007.jpg
+12----goods011.jpg
+13----goods005.jpg
+14----goods004.jpg
+15----goods010.jpg
+16----goods021.jpg
+17----goods009.jpg
+18----goods008.jpg
+19----goods020.jpg
+20----goods018.jpg
+21----goods019.jpg
+成功
+
+1----group1/M00/00/00/wKhWpF3nCsWAFhc-AAAlcKoBCmE099.jpg----成功
+2----group1/M00/00/00/wKhWpF3nCsWACAfUAAAgnT-Ue5Y327.jpg----成功
+3----group1/M00/00/00/wKhWpF3nCsWAXsvsAAAcyXgye2c175.jpg----成功
+4----group1/M00/00/00/wKhWpF3nCsWATAvfAAAljKgfdmY626.jpg----成功
+5----group1/M00/00/00/wKhWpF3nCsWAVwKWAAAiQhDvUbs681.jpg----成功
+6----group1/M00/00/00/wKhWpF3nCsWAG3UFAAAgbegSiQE239.jpg----成功
+7----group1/M00/00/00/wKhWpF3nCsWACkDrAAAjjufgobM769.jpg----成功
+8----group1/M00/00/00/wKhWpF3nCsWAeXqYAAAh4EWnwls172.jpg----成功
+9----group1/M00/00/00/wKhWpF3nCsWACfHHAAAeuN21vRw661.jpg----成功
+10----group1/M00/00/00/wKhWpF3nCsWAaY-OAAAm3p_sxSM772.jpg----成功
+11----group1/M00/00/00/wKhWpF3nCsWANFGzAAAZxLC2p5E500.jpg----成功
+12----group1/M00/00/00/wKhWpF3nCsWAKeiYAAAgrD-LXXY324.jpg----成功
+13----group1/M00/00/00/wKhWpF3nCsWAIAyqAAAhspN0nR8103.jpg----成功
+14----group1/M00/00/00/wKhWpF3nCsWAPRPVAAAcLdc5fm0289.jpg----成功
+15----group1/M00/00/00/wKhWpF3nCsWAAFQDAAAWn6HsRe4476.jpg----成功
+16----group1/M00/00/00/wKhWpF3nCsWALWS6AAA5OYGDqQg413.jpg----成功
+17----group1/M00/00/00/wKhWpF3nCsWAI4w1AAAaaXWKiE8575.jpg----成功
+18----group1/M00/00/00/wKhWpF3nCsWAQaGVAAAidj9jDC0986.jpg----成功
+19----group1/M00/00/00/wKhWpF3nCsWAVcrDAAAkaFzzsK8795.jpg----成功
+20----group1/M00/00/00/wKhWpF3nCsWATWXCAAAk0Pq7CMk188.jpg----成功
+21----group1/M00/00/00/wKhWpF3nCsWAY88YAAAk8UJFP7A666.jpg----成功
+</body>
+</html>
